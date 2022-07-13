@@ -1,0 +1,21 @@
+:root{
+    --white: #fff;
+    --black: #000;
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    font-family: 'Ibarra Real Nova', serif;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
