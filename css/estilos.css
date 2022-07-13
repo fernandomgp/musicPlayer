@@ -1,7 +1,17 @@
 :root{
     --white: #fff;
+    --white-light: #F7F5F2;
     --black: #000;
-
+    --black-medium: #141E27;
+    --purple-medium: #7A4069;
+    --purple-hard: #533E85;
+    --purple-light: #C9BBCF;
+    --blue-light: #B7D3DF;
+    --blue-medium: #6E85B7;
+    --blue-hard: #06113C;
+    --green-hard: #2F86A6;
+    --green-medium: #22577E;
+    --green-light: #AEDBCE;
 }
 *{
     box-sizing: border-box;
@@ -18,4 +28,66 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.player {
+    max-width: 568px;
+    min-width: 320px;
+    background-image: linear-gradient(to bottom ,var(--green-hard), var(--blue-light));
+    border-radius: 15px;
+    padding: 2rem;
+    color: var(--white);
+    box-shadow: 2px 2px 2px var(--black);
+}
+.title{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.cover{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px var(--green-medium);
+}
+.progressContainer{
+    width: 100%;
+    height: 18px;
+    background-color: var(--white-light);
+    margin: 20px 0px;
+    border-radius: 10px;
+    display: block;
+}
+.progress{
+    background-color:var(--green-hard);
+    width: 40%;
+    height: 100%;
+    border-radius: 10px;
+}
+.controls{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+.controls button i:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.prev{
+    background-color: transparent;
+    border: none;
+    font-size: 35px;
+    color:  #0F0E0E;
+}
+.songs li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    margin: 5px 0px;
+}
+.songs li a{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 600;
+    font-size: 20px;
+    color: #393E46;
 }
